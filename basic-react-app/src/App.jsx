@@ -1,13 +1,16 @@
 import "./App.css"
-import Title from "./Title.jsx"
 import ProductTab from "./ProductTab.jsx";
 
 
 
 
 function App() {
+ 
 
-  return <ProductTab/>
+  return <div>
+     <h2>Blockbuster Deals | Shop Now</h2>
+     <ProductTab/>
+  </div>
 }
 
 export default App

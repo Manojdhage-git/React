@@ -1,13 +1,9 @@
-#Product {
-    border: 13px solid rgb(153, 94, 94);
-    height: 200px;
-    width: 300px;
-    border-radius: 24px;
-    margin: 50px auto;
-    padding: 1px 10px 0px 10px;
+.Product {
+    border: 1px solid black;
+    height: 160px;
+    width: 200px;
+    border-radius: 14px;
+   margin-bottom: 15px;
+   margin-left: 15px;
 }
 
-#Product li{
-    color: rgb(19, 20, 104);
-font-size: large;
-}
