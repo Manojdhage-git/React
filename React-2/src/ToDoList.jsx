@@ -19,7 +19,7 @@ export default function ToDoList(){
     }
 
     let deleteTodo = (id) => {
-     setTodos(todos.filter((todo) => todo.id !== id));
+     setTodos((prevTodos)=>todos.filter((prevTodos) => prevTodos.id !== id));
 
     }
 
