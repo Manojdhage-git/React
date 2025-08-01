@@ -1,11 +1,12 @@
 import { useState } from "react";
+import { v4 as uuidv4 } from 'uuid';
 
 export default function ToDoList(){
-    let [todos,setTodos] = useState(["sample task 1", "sample task 2"]);
+    let [todos,setTodos] = useState([{task:"sample-task", id:uuidv4()}]);
     let [newTodo, setNewTodo] = useState("");
 
     let addNewTodo = () => {
-        setTodos([...todos, newTodo]);
+        setTodos([...todos, {task: newTodo, id: uuidv4()}]);
         setNewTodo(""); // Clear the input field after adding the task
     }
 
@@ -27,8 +28,8 @@ export default function ToDoList(){
 
             <h4>Tasks To Do</h4>
             <ul>
-                {todos.map((todo, index) => (
-                    <li key={index}>{todo}</li>
+                {todos.map((todo) => (
+                    <li key={todo.id}>{todo.task}</li>
                 ))}
             </ul>
         </div>
