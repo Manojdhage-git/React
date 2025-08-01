@@ -4,14 +4,13 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Counter from './Counter'
 import LikeButton from './LikeButton.jsx';
+import ToDoList from './ToDoList.jsx';
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (<div>
-     <LikeButton/>
-    <Counter/>
-
+   <ToDoList />
   </div>
    
   )
