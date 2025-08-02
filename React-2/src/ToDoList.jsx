@@ -10,7 +10,7 @@ export default function ToDoList(){
             return [...prevTodos, { task: newTodo, id: uuidv4(), isDone: false }];
             // Create a new todo with a unique ID
     });
-        setNewTodo(""); // Clear the input field after adding the task
+        setNewTodo(""); // Clear the input field after adding the task.
     }
 
     let updateTadoValue=(event)=>{
@@ -27,7 +27,7 @@ export default function ToDoList(){
         setTodos((prevTodos) => {
             return prevTodos.map((todo) => ({
                 ...todo,
-                isDone: true // Mark all todos as done
+                isDone: true // Mark all todos as done.
             }));
         });
 
